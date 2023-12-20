@@ -1,0 +1,27 @@
+[project]
+name = "cdk8s-utils"
+version = "0.1.1"
+description = "cdk8s utilities and helpers"
+authors = [
+    {name = "Nick Albury", email = "nickalbury@gmail.com"},
+]
+dependencies = [
+    "ruamel-yaml~=0.18.5",
+    "cdk8s~=2.68.20",
+]
+requires-python = ">=3.12"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project.optional-dependencies]
+dev = ["pytest"]
+build = [
+    "build",
+    "twine",
+    "keyring",
+    "keyrings.google-artifactregistry-auth",
+    ]

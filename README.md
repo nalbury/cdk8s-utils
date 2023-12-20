@@ -53,6 +53,20 @@ if __name__ == "__main__":
 
 It can be run as a standard python executable e.g. `python main.py --help`
 
+```
+usage: cdk8s-app [-h] [--config CONFIG] [--print | --no-print] name
+
+positional arguments:
+  name                 resource name
+
+options:
+  -h, --help           show this help message and exit
+  --config CONFIG      path to config file with input values (default:
+                       None)
+  --print, --no-print  if true, the manifests will be printed to
+                       stdout (default: True)
+```
+
 ### Cookiecutter template
 
 A complete cdk8s python framework can be generated for a new python project with the [cookiecutter template here.](https://github.com/nalbury/cookiecutter-cdk8s-python-app)
